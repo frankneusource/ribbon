@@ -30,7 +30,7 @@ import org.slf4j.LoggerFactory;
 import com.netflix.client.config.IClientConfig;
 import com.netflix.client.config.IClientConfigKey;
 
-/** 
+/**
  * Rule that use the average/percentile response times
  * to assign dynamic "weights" per Server which is then used in 
  * the "Weighted Round Robin" fashion. 

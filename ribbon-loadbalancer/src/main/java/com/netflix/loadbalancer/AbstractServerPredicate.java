@@ -139,6 +139,7 @@ public abstract class AbstractServerPredicate implements Predicate<PredicateKey>
     }
 
     /**
+	 * 生成下个server的id，用于轮询负载均衡
      * Referenced from RoundRobinRule
      * Inspired by the implementation of {@link AtomicInteger#incrementAndGet()}.
      *
@@ -193,6 +194,7 @@ public abstract class AbstractServerPredicate implements Predicate<PredicateKey>
     }
     
     /**
+	 * 表明过滤形式的选择是轮训选择
      * Choose a server in a round robin fashion after the predicate filters a given list of servers and load balancer key. 
      */
     public Optional<Server> chooseRoundRobinAfterFiltering(List<Server> servers, Object loadBalancerKey) {

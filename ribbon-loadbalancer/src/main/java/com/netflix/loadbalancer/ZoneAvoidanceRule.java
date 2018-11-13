@@ -26,6 +26,7 @@ import java.util.Set;
 import com.netflix.client.config.IClientConfig;
 
 /**
+ * 判断server所在zone
  * A rule that uses the a {@link CompositePredicate} to filter servers based on zone and availability. The primary predicate is composed of
  * a {@link ZoneAvoidancePredicate} and {@link AvailabilityPredicate}, with the fallbacks to {@link AvailabilityPredicate}
  * and an "always true" predicate returned from {@link AbstractServerPredicate#alwaysTrue()} 

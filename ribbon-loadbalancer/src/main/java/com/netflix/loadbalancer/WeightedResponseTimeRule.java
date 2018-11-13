@@ -31,7 +31,8 @@ import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-/** 
+/**
+ * 根据平均响应时间作为权重进行ribbon轮询
  * Rule that use the average/percentile response times
  * to assign dynamic "weights" per Server which is then used in 
  * the "Weighted Round Robin" fashion. 

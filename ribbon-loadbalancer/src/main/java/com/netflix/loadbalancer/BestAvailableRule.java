@@ -20,6 +20,7 @@ package com.netflix.loadbalancer;
 import java.util.List;
 
 /**
+ * 最低并发策略，选择并发请求连接数最少的server
  * A rule that skips servers with "tripped" circuit breaker and picks the
  * server with lowest concurrent requests.
  * <p>

@@ -25,6 +25,7 @@ import com.netflix.servo.annotations.DataSourceType;
 import com.netflix.servo.annotations.Monitor;
 
 /**
+ * 过滤处于断路器以及超过预设并发连接数的server
  * A load balancer rule that filters out servers that:
  * <ul>
  * <li> are in circuit breaker tripped state due to consecutive connection or read failures, or</li>

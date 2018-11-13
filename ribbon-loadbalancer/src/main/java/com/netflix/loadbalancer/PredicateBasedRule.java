@@ -20,6 +20,7 @@ package com.netflix.loadbalancer;
 import com.google.common.base.Optional;
 
 /**
+ * 基于拦截器的路由选择策略基类，子类包括根据zone和并发连接数过滤的实现
  * A rule which delegates the server filtering logic to an instance of {@link AbstractServerPredicate}.
  * After filtering, a server is returned from filtered list in a round robin fashion.
  * 

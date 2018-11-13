@@ -23,6 +23,7 @@ import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
+ * 随机轮训
  * A loadbalacing strategy that randomly distributes traffic amongst existing
  * servers.
  * 
